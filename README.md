@@ -13,6 +13,22 @@ npx create-expo-app -e with-router
 npm install expo-font axios react-native-dotenv
 ```
 
+## 📚 After cloning the repository, run this command to install the packages locally
+```sh
+npm install
+```
+
+## 📚 To upgrade packages
+```sh
+npx expo install --fix
+```
+
+Or to review and upgrade your dependencies
+
+```sh
+npx expo install --check
+```
+
 ## 📚 Package used to run App on another wifi network
 ```sh
 npm install -g expo-cli
