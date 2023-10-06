@@ -9,10 +9,9 @@ const useFectch = (endpoint, query) => {
 
     const options = {
         method: 'GET',
-        // url: `https://jsearch.p.rapidapi.com/${endpoint}`,
-        url: 'https://cidadaohmlg.riopreto.sp.gov.br/sample_data.json',
+        url: `https://jsearch.p.rapidapi.com/${endpoint}`,
         headers: {
-            'X-RapidAPI-Key': 'MY_KEY',
+            'X-RapidAPI-Key': '3b74bbfdffmsh36ca9eae9781e57p1db1edjsn351b59fea3a7',
             'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
         },
         params: { ...query }
