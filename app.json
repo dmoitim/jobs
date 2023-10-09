@@ -8,6 +8,30 @@
       "expo-router"
     ],
     "name": "jobs",
-    "slug": "jobs"
+    "slug": "jobs",
+    "description": "Find your next job!",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/app-icon.png",
+    "splash": {
+      "image": "./assets/app-splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "1bba2ad0-3a20-4671-afb9-2478b63b35b1"
+      }
+    },
+    "owner": "dmoitim",
+    "android": {
+      "package": "com.dmoitim.jobs"
+    },
+    "ios": {
+      "bundleIdentifier": "com.dmoitim.jobs"
+    }
   }
 }
