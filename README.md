@@ -18,6 +18,16 @@ npm install expo-font axios react-native-dotenv
 npm install
 ```
 
+## 📚 Install eas to build
+```sh
+npm install --global eas-cli
+```
+
+## 📚 To build for android
+```sh
+npx eas build --platform android --local
+```
+
 ## 📚 To upgrade packages
 ```sh
 npx expo install --fix
