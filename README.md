@@ -23,6 +23,11 @@ npm install
 npm install --global eas-cli
 ```
 
+## 📚 Install sharp-cli
+```sh
+npm install -g sharp-cli
+```
+
 ## 📚 To build for android
 ```sh
 npx eas build --platform android --local
@@ -53,3 +58,26 @@ expo-cli start --tunnel
 
 - [Expo Router: Docs](https://expo.github.io/router)
 - [Expo Router: Repo](https://github.com/expo/router)
+
+## Install
+Fedora Linux 38
+VS Code
+NVM -> NodeJS LTS
+Android Studio
+-> Instalar a SDK, platform e cli
+
+Javac:
+sudo dnf install java-17-openjdk-devel.x86_64
+
+
+Variáveis de ambiente:
+
+nano ~/.bash_profile
+
+Adiciona as linhas abaixo no final do arquivo:
+export ANDROID_HOME=/home/dmoitim/Android/Sdk
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+source ~/.bash_profile
+
+?? sdk.dir = /home/dmoitim/Android/Sdk
