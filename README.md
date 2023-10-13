@@ -60,24 +60,70 @@ expo-cli start --tunnel
 - [Expo Router: Repo](https://github.com/expo/router)
 
 ## Install
-Fedora Linux 38
-VS Code
-NVM -> NodeJS LTS
-Android Studio
--> Instalar a SDK, platform e cli
 
-Javac:
-sudo dnf install java-17-openjdk-devel.x86_64
+Instalar o VS Code, baixando o .deb do site e rodar o comando:
+```sh
+sudo apt install PACOTE.deb
+```
 
+Instalar o Chrome, baixando o .deb do site e rodar o comando:
+```sh
+sudo apt install PACOTE.deb
+```
 
-Variáveis de ambiente:
+Instalar o NVM:
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+```
 
-nano ~/.bash_profile
+Instalar a última versão LTS do node:
+```sh
+nvm install --lts
+```
 
-Adiciona as linhas abaixo no final do arquivo:
+Indicar para o sistema utilizar essa versão:
+```sh
+nvm use --lts
+```
+
+Atualizar o NPM para a última versão estável:
+```sh
+npm install -g npm@latest
+```
+
+Instalar o JAVA 17 LTS:
+```sh
+sudo apt install openjdk-17-jdk
+```
+
+Instalar o Android Studio, baixado do site:
+https://developer.android.com/studio
+
+Descompacte o arquivo para a pasta do usuário, ficando:
+```sh
+/home/dmoitim/android-studio/
+```
+
+Execute o arquivo:
+```sh
+/home/dmoitim/android-studio/bin/studio.sh
+```
+
+Instale as SDKs sugeridas:
+Next -> Next -> Finish
+
+Ao término, clique em More Action -> SDK Manager, e na aba SDK Tools instale também:
+- NDK (Side by Side)
+- Android SDK Command-line Tools
+- CMake
+
+Abrir o arquivo:
+```sh
+vim.tiny ~/.bashrc
+```
+
+Incluir as linhas:
+```sh
 export ANDROID_HOME=/home/dmoitim/Android/Sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-
-source ~/.bash_profile
-
-?? sdk.dir = /home/dmoitim/Android/Sdk
+```
